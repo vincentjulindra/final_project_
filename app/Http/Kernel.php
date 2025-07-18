@@ -59,5 +59,6 @@ class Kernel extends HttpKernel
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'role' => \App\Http\Middleware\RoleMiddleware::class,  // Middleware role custom
+        'task.owner' => \App\Http\Middleware\TaskOwnerMiddleware::class,
     ];
 }
